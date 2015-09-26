@@ -10,7 +10,7 @@ You will need to set up a [Stripe](https://stripe.com/) account and get Neo4j up
 
 You're provided with a small graph that already has a user with a cart object. You're task is to handle the checkout process of these products. The total checkout price should be $2099.97.
 
-97% of the purchase price will go to the distributor for which you'll have to set up a managed account, which you can do manually. Don't forget to set a stripeId property on the distributor node that reflects the id of the managed stripe account. The rest of the money will stay in the stripe user's account.
+97% of the purchase price will go to the distributor for which you'll have to set up a [managed account](https://stripe.com/docs/connect/managed-accounts), which you can do manually. Don't forget to set a stripeId property on the distributor node that reflects the id of the managed stripe account. The rest of the money will stay in the stripe user's account.
 
 You don't have to worry about [securing that API](https://tools.ietf.org/html/rfc7519) end point.
 
@@ -27,7 +27,7 @@ No idea how to write cypher for node? Give [cypher-rest](https://www.npmjs.com/p
 To create the test data, I recommend starting neo4j with an empty graph.db and run
 
     neo4j-shell -file create.neo
-    
+
 from the command line.
 
 ###Nodes

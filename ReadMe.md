@@ -23,13 +23,18 @@ You may use nodejs (we like [hapijs](http://hapijs.com/)), golang, c++, or pytho
 No idea how to write cypher for node? Give [cypher-rest](https://www.npmjs.com/package/cypher-rest) a try.
 
 ![Graph Example](example_graph.png)
-##Neo4j data model
-To create the test data, I recommend starting neo4j with an empty graph.db and run
+##Neo4j Set Up
+####Using Docker
+If you're familiar with docker, you can just run ```docker run -p 7474:7474 manonthemat/supplyhub-challenge``` to get Neo4j 2.2.5 up and running with the test database.
+
+####Manual
+For manual setup I recommend using Neo4j 2.2.5 or higher, disabling authentication and run
 
     neo4j-shell -file create.neo
 
-from the command line.
+from the command line on an empty graph.db.
 
+##Data Model Overview
 ###Nodes
 ####(:Product)
 Products have several somewhat important properties on them.

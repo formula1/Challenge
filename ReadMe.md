@@ -1,3 +1,35 @@
+### Necessities
+
+npm install
+
+/secret.json
+
+```
+{
+  "stripe":{
+    "apiKey": "your_api_key"
+  },
+  "neo4j": {
+    "url": "http://url_to_your_neo4j_instance"
+  }
+}
+```
+
+npm start
+
+### Issues
+
+cypher-rest at times throws a silent error which is not catchable by Promises
+This may be associated to the fact they are using a custom promise library
+
+This is my first time with neo4j, got to say it was interesting. Never seen a database
+like it but it makes sense with how relationships are often times as if not more important
+than the documents themselves
+
+Distributor does not have a unique identifier. Initially my plan was to iterate over each subcart that was a PART_OF the cart that the User HAS and sent the money to the Distributor only that portion. Unfortunately I started realizing you wanted me to do very minimal work when it relates to stripe and cypher, so this is what you have instead.
+
+---
+
 #SupplyHub Challenge
 
 With this challenge you're asked to complete several user stories:

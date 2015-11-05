@@ -1,0 +1,27 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "With this challenge you're asked to complete several user stories:",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/formula1/Challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/formula1/Challenge/issues"
+  },
+  "homepage": "https://github.com/formula1/Challenge#readme",
+  "dependencies": {
+    "cypher-rest": "^0.1.0",
+    "hapi": "^11.0.5",
+    "inert": "^3.2.0",
+    "joi": "^7.0.0",
+    "stripe": "^4.0.0"
+  }
+}
